@@ -5,16 +5,16 @@ def exists_word(word, instance):
         occurrence = []
 
         for j, line in enumerate(file["linhas_do_arquivo"], 1):
-           if word.lower() in line.lower():
-            occurrence.append({"linha": j})
+            if word.lower() in line.lower():
+             occurrence.append({"linha": j})
 
         if occurrence:
-           result = {
+            result = {
             "palavra": word,
             "arquivo": file["nome_do_arquivo"],
             "ocorrencias": occurrence
-           }
-           search_result.append(result)
+            }
+            search_result.append(result)
 
     return search_result
 
