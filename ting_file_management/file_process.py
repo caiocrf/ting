@@ -20,7 +20,6 @@ def process(path_file, instance):
         sys.stdout.write(str(list_data))
 
 
-
 def remove(instance):
     if len(instance) == 0:
         print("Não há elementos")
