@@ -1,6 +1,7 @@
 from ting_file_management.file_management import txt_importer
 import sys
 
+
 def process(path_file, instance):
     data = txt_importer(path_file)
 
@@ -17,6 +18,7 @@ def process(path_file, instance):
 
         instance.enqueue(list_data)
         sys.stdout.write(str(list_data))
+
 
 
 def remove(instance):
